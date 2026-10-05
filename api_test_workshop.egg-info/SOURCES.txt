@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+api_test_workshop.egg-info/PKG-INFO
+api_test_workshop.egg-info/SOURCES.txt
+api_test_workshop.egg-info/dependency_links.txt
+api_test_workshop.egg-info/requires.txt
+api_test_workshop.egg-info/top_level.txt

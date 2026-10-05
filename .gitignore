@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+report.html
+sut/data/
+*.db
+.DS_Store
+
+# bewusst nicht im Repo (Auflösung der eingebauten SUT-Fehler)
+SPOILER.md

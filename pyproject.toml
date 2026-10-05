@@ -1,0 +1,28 @@
+[project]
+name = "api-test-workshop"
+version = "0.1.0"
+description = "pytest-Showcase: systematischer API-Test einer Mini-Defekt- und Testdaten-API"
+requires-python = ">=3.12"
+dependencies = [
+    "pytest>=8",
+    "pytest-html>=4",
+    "httpx>=0.27",
+    "jsonschema>=4",
+    "xmlschema>=3",
+]
+
+[project.optional-dependencies]
+sut = ["fastapi>=0.110", "uvicorn>=0.29"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+markers = [
+    "smoke: schneller Grundcheck, läuft bei jedem Push",
+    "regression: vollständiger Lauf, bei Pull Requests und nachts",
+    "negative: Negativtests (ungültige Eingaben, Fehlerfälle)",
+]
+
+# Kein installierbares Paket, nur Abhängigkeiten installieren
+[tool.setuptools]
+packages = []

@@ -1,0 +1,9 @@
+# Startet das SUT (Mini-Defekt- und Testdaten-API).
+# Platzhalter: sut/Dockerfile und die App folgen mit dem SUT-Gerüst.
+services:
+  sut:
+    build: ./sut
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./sut/data:/app/data
